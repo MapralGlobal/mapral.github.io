@@ -1,0 +1,120 @@
+@font-face {
+    font-family: ptSans;
+    src: url(./Product\ Sans\ Regular.ttf);
+}
+
+body{
+    font-family: ptSans;
+}
+
+.sideNav{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 320px;
+    background-color: #F5F7FA;
+}
+
+.brandImg{
+    width: 75%;
+    height: auto;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #444D63;
+    font-size: 20px;
+
+}
+
+.navLink.active{
+    color: #3062D8;
+}
+
+.iconify{
+    font-size: 25px;
+    color: #444;
+}
+
+.iconify.active{
+    color: #3062D8;
+}
+
+.main{
+    position: absolute;
+    width: calc(100vw - 320px);
+    right: 0%;
+    /* min-width: 100vh; */
+}
+
+.heroHead{
+    color: #3062D8;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.smallHead{
+    font-weight: 700;
+font-size: 32px;
+}
+
+.heroList{
+    font-size: 22px;
+}
+
+.heroWrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.mainImg{
+    width: 100%;
+}
+
+.mainImgp{
+    display: none ;
+}
+
+.mainNav > .iconify{
+    padding: 4px;
+    font-size: 40px;
+}
+
+
+@media (min-width:425px) {
+    .mainImg{
+        display: block !important;
+    }
+
+    .mainImgp{
+        display: none !important;
+    }
+
+    .mainNav{
+        display: none !important;
+    }
+}
+
+@media (max-width:425px) {
+    .mainImgp{
+        display: block !important;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .main{
+        position: absolute;
+        width: 100% !important;
+        right: 0%;
+    }
+
+    .sideNav{
+        display: none !important;
+    }
+
+    .mainImg{
+        display: none !important;
+    }
+}
