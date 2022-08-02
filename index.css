@@ -77,11 +77,31 @@ font-size: 32px;
     display: none ;
 }
 
-.mainNav > .iconify{
+.mainNav .iconify{
     padding: 4px;
     font-size: 40px;
 }
 
+
+
+@media (max-width:1400px) {
+    .sideNav{
+        width: 215px;
+    }
+
+    .navLink{
+        font-size: 16px;
+    }
+
+    .navIcon{
+        font-size: 19px;
+    }
+
+    .mainImg {
+        width: 110%;
+        margin-left: -10%;
+    }
+}
 
 @media (min-width:425px) {
     .mainImg{
@@ -104,6 +124,18 @@ font-size: 32px;
         height: auto;
         object-fit: contain;
     }
+
+    .mainNav img{
+        width: 40%;
+        height: auto;
+        padding: 6px;
+   
+    }
+        .mainNav > .iconify {
+            padding: 4px;
+            font-size: 40px;
+            margin-right: 10px;
+    }
     .main{
         position: absolute;
         width: 100% !important;
@@ -118,3 +150,4 @@ font-size: 32px;
         display: none !important;
     }
 }
+
