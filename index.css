@@ -3,11 +3,11 @@
     src: url(./Product\ Sans\ Regular.ttf);
 }
 
-body{
+body {
     font-family: ptSans;
 }
 
-.sideNav{
+.sideNav {
     position: fixed;
     top: 0%;
     left: 0%;
@@ -16,68 +16,68 @@ body{
     background-color: #F5F7FA;
 }
 
-.brandImg{
+.brandImg {
     width: 75%;
     height: auto;
 }
 
-.navLink{
+.navLink {
     text-decoration: none;
     color: #444D63;
     font-size: 20px;
 
 }
 
-.navLink.active{
+.navLink.active {
     color: #3062D8;
 }
 
-.iconify{
+.iconify {
     font-size: 25px;
     color: #444;
 }
 
-.iconify.active{
+.iconify.active {
     color: #3062D8;
 }
 
-.main{
+.main {
     position: absolute;
     width: calc(100vw - 320px);
     right: 0%;
     /* min-width: 100vh; */
 }
 
-.heroHead{
+.heroHead {
     color: #3062D8;
     font-size: 60px;
     font-weight: 700;
 }
 
-.smallHead{
+.smallHead {
     font-weight: 700;
-font-size: 32px;
+    font-size: 32px;
 }
 
-.heroList{
+.heroList {
     font-size: 22px;
 }
 
-.heroWrapper{
+.heroWrapper {
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-.mainImg{
+.mainImg {
     width: 100%;
 }
 
-.mainImgp{
-    display: none ;
+.mainImgp {
+    display: none;
 }
 
-.mainNav .iconify{
+.mainNav .iconify {
     padding: 4px;
     font-size: 40px;
 }
@@ -85,15 +85,15 @@ font-size: 32px;
 
 
 @media (max-width:1400px) {
-    .sideNav{
+    .sideNav {
         width: 215px;
     }
 
-    .navLink{
+    .navLink {
         font-size: 16px;
     }
 
-    .navIcon{
+    .navIcon {
         font-size: 19px;
     }
 
@@ -104,50 +104,51 @@ font-size: 32px;
 }
 
 @media (min-width:425px) {
-    .mainImg{
+    .mainImg {
         display: block !important;
     }
 
-    .mainImgp{
+    .mainImgp {
         display: none !important;
     }
 
-    .mainNav{
+    .mainNav {
         display: none !important;
     }
 }
 
 @media (max-width:425px) {
-    .mainImgp{
+    .mainImgp {
         display: block !important;
         width: 100%;
         height: auto;
         object-fit: contain;
     }
 
-    .mainNav img{
+    .mainNav img {
         width: 40%;
         height: auto;
         padding: 6px;
-   
+
     }
-        .mainNav > .iconify {
-            padding: 4px;
-            font-size: 40px;
-            margin-right: 10px;
+
+    .navIcon {
+        padding: 4px;
+        font-size: 40px;
+        margin-right: 10px;
     }
-    .main{
+
+    .main {
         position: absolute;
         width: 100% !important;
         right: 0%;
     }
 
-    .sideNav{
+    .sideNav {
         display: none !important;
     }
 
-    .mainImg{
+    .mainImg {
         display: none !important;
     }
 }
-
