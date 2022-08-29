@@ -1,96 +1,244 @@
-<!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
+  <head>
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Managerial, services, Labbour laws, webdesigning company" />
-    <meta name="description"
-        content="We as a team work towards the vision of the company and strive to become highly professional firm with the best professionals in the field of personnel management." />
-    <meta name="author" content="Harsh Lad" />
-    <meta name="robots" content="index, follow" />
-    <meta name="revisit-after" content="3 days" />
-    <meta name="language" content="English" />
-    <meta name="distribution" content="Global" />
-    <meta name="rating" content="General" />
-    <meta name="document-class" content="Published" />
-
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Mapral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/home.css">
+
+    
 </head>
+  <body>
+    <div class="row">
+        <div class="col-2 sideNav">
+            <div class="topLogo d-flex justify-content-center py-3">
+                <img src="img/logo.png" class="navBrand" alt="">
+            </div>
+            <div class="navLinksWrapper px-4">
+                <div class="navLink d-flex align-items-center">
+                    <iconify-icon class="navIcons mx-2 my-2" icon="fluent:home-32-regular"></iconify-icon>
+                    <span class="navText"> <a href="/" class="navText">Home</a> </span>
+                </div>
 
-<body>
-    <div class="sideNav">
-        <div class="navBrand d-flex justify-content-center p-4">
-            <img src="./img/Logo.png" alt="" class="brandImg">
+                <!-- <div class="navLink d-flex align-items-center">
+                    <iconify-icon class="navIcons mx-2 my-2" icon="carbon:chart-network"></iconify-icon>
+                    <span class="navText"> <a href="/services/" class="navText">Services</a> </span>
+                </div> -->
+
+                <div class="navLink d-flex align-items-center">
+                    <iconify-icon class="navIcons mx-2 my-2" icon="carbon:blog"></iconify-icon>
+                    <span class="navText"> <a href="/blog.html" class="navText">Blogs</a> </span>
+                </div>
+
+                <div class="navLink d-flex align-items-center">
+                    <iconify-icon class="navIcons mx-2 my-2" icon="fluent:call-outbound-16-regular"></iconify-icon>
+                    <span class="navText"> <a href="/contact.html" class="navText">Contact us</a> </span>
+                </div>
+
+                <div class="navLink d-flex align-items-center">
+                    <iconify-icon class="navIcons mx-2 my-2" icon="akar-icons:info"></iconify-icon>
+                    <span class="navText"> <a href="/about.html" class="navText">About us</a> </span>
+                </div>
+
+
+            </div>
         </div>
 
-        <div class="navlinks mx-4">
-            <div class="d-flex align-items-center"><span class="iconify navIcon mx-2 my-2 active"
-                    data-icon="fluent:home-32-regular"></span><a href="" class="navLink active">Home</a></div>
-            <div class="d-flex align-items-center"><span class="iconify navIcon mx-2 my-2"
-                    data-icon="akar-icons:info"></span><a href="" class="navLink">About</a></div>
-            <div class="d-flex align-items-center"><span class="iconify navIcon mx-2 my-2"
-                    data-icon="fluent:call-outbound-16-regular"></span><a href="" class="navLink">Contact</a></div>
+        <div class="col-12 phoneNav px-2 d-flex align-items-center justify-content-between">
+            <div class="imgWrapper">
+                <img src="img/logo.png" class="navBrand" alt="">
+            </div>
+
+            <div class="navIconWrapper" id="menuIcons">
+                <iconify-icon class="navIcons "  icon="eva:menu-arrow-outline"></iconify-icon>
+            </div>
         </div>
-    </div>
 
-    <div class="mainNav d-flex justify-content-between align-items-center">
-        <img src="./img/Logo.png" alt="" class="brandImg">
-        <span class="iconify" data-icon="eva:menu-arrow-outline" style="color: #444;"></span>
-    </div>
 
-    <div class="main">
-        <!-- <div class="heroWrapper">
-            <div class="row ">
-                <div class="col-7">
-                    <h2 class="heroHead">Our Service</h2>
-                    <p class="smallHead">With Mapral, you will be provided top <br>
-                        notch services in the following:</p>
-                    <ul class="heroList">
-                        <li>Manpower recruitment </li>
-                        <li>Statutory compliance & audit</li>
-                        <li>Dealing with Labour law</li>
-                        <li>House keeping service</li>
+        <div class="phoneHiddenMenu navLinksWrapper px-2" id="phoneHiddenMenuBar">
+            <div class="navLink d-flex align-items-center">
+                <iconify-icon class="navIcons newPhoneIcons mx-2 my-2" icon="fluent:home-32-regular"></iconify-icon>
+                <span class="navText"> <a href="/" class="navText">Home</a> </span>
+            </div>
+
+
+
+            <div class="navLink d-flex align-items-center">
+                <iconify-icon class="navIcons newPhoneIcons mx-2 my-2" icon="carbon:blog"></iconify-icon>
+                <span class="navText"> <a href="/blog.html" class="navText">Blogs</a> </span>
+            </div>
+
+            <div class="navLink d-flex align-items-center">
+                <iconify-icon class="navIcons newPhoneIcons mx-2 my-2" icon="fluent:call-outbound-16-regular"></iconify-icon>
+                <span class="navText"> <a href="/contact.html" class="navText">Contact us</a> </span>
+            </div>
+
+            <div class="navLink d-flex align-items-center">
+                <iconify-icon class="navIcons newPhoneIcons mx-2 my-2" icon="akar-icons:info"></iconify-icon>
+                <span class="navText"> <a href="/about.html" class="navText">About us</a> </span>
+            </div>
+        </div> 
+
+        <div class="col-lg-10 main col-sm-12 col-md-10">
+            <a href="/signup/" class="authIn  mt-2 mx-3">Create an account</a>
+            <a href="/login/" class="authInn px-2 my-2">Login</a>
+            
+            <!-- wertyuijfddg -->
+
+            <div class="row serviceRows">
+                <div class="col-lg-7 col-md-7 col-sm-12 px-4 serviceFirstLeft d-flex flex-column justify-content-center">
+                    <h1 class="serviceHead mx-3">Our Services</h1>
+                    <p class="serviceText mb-0 mx-3">
+                        With Mapral, you will be provided top <br> notch services in the following</p>
+                    <br>
+                    <ul class="fList mx-2">
+                        <li class="fListItem my-1">Manpower recruitment </li>
+                        <li class="fListItem my-1">Statutory compliance & audit</li>
+                        <li class="fListItem my-1">Dealing with Labour law</li>
+                        <li class="fListItem my-1">House keeping service</li>
                     </ul>
                 </div>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img src="./img/serviceImg1.png" alt="" class="serviceHeadImg img-fluid">
+                </div>
+            
+            
             </div>
-        </div> -->
+            
+            <div class="row serviceRows serviceRowsOdd">
+            
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img src="./img/manpower.png" alt="" class="serviceHeadImg img-fluid">
+                </div>
+            
+            
+                <div class="col-lg-7 col-md-7 col-sm-12 px-4 serviceFirstLeft d-flex flex-column justify-content-center">
+                    <h1 class="serviceHead mx-5">Manpower</h1>
+            
+                    <ul class="fList mx-4">
+                        <li class="fListItem my-1">Executive MBA/Engineers</li>
+                        <li class="fListItem my-1">Technical/Non-Technical Staff</li>
+                        <li class="fListItem my-1">Blue Caller-skilled/Unskilled</li>
+                        <li class="fListItem my-1">ITI Holders/Back Office</li>
+                        <li class="fListItem my-1">Promoters</li>
+                        <li class="fListItem my-1">Supervisors</li>
+                        <li class="fListItem my-1">Marketing & Collection Staff</li>
+                        <li class="fListItem my-1">Event Management for short term </li>
+                        <li class="fListItem my-1">Trainee/apprentice</li>
+                        <li class="fListItem my-1">Medical Staff (Nurses/Technical /ward boy/PCA/Janitors</li>
+                        <li class="fListItem my-1">Data Entry Operators</li>
+                        <li class="fListItem my-1">Mathadi Kamgar (Loading /Unloading)</li>
+                    </ul>
+                </div>
+            
+            </div>
+            
+            <div class="row serviceRows">
+                <div class="col-lg-7 col-md-7 col-sm-12 px-4 serviceFirstLeft d-flex flex-column justify-content-center">
+                    <h2 class="serviceHead  mx-3">Statutory Compliance & Audit </h2>
+                    <ul class="fList mx-2">
+                        <li class="fListItem my-1">Salary processing </li>
+                        <li class="fListItem my-1">Attendance Tracking </li>
+                        <li class="fListItem my-1">Payroll /Report </li>
+                        <li class="fListItem my-1">Employee Registration</li>
+                        <li class="fListItem my-1">workmen Register </li>
+                        <li class="fListItem my-1">Licenses Registration &Renewal </li>
+                        <li class="fListItem my-1">Monthly Returns /Challan Of PF/ESIC/PT/LWF/ETC</li>
+                        <li class="fListItem my-1">Filing Nomination & Declaration </li>
+                        <li class="fListItem my-1">Medical Staff (Nurses/Technical /ward boy/PCA/Janitors</li>
+                        <li class="fListItem my-1">Audit Internal /Statutory external</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img src="./img/audit.png" alt="" class="serviceHeadImg img-fluid">
+                </div>
+            </div>
+            
+            <div class="row serviceRows  serviceRowsOdd b-0">
+            
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img src="./img/law.png" alt="" class="serviceHeadImg img-fluid">
+                </div>
+            
+            
+                <div class="col-lg-7 col-md-7 col-sm-12 px-4 serviceFirstLeft d-flex flex-column justify-content-center">
+                    <h1 class="serviceHead mx-5">Dealing with Labour Laws </h1>
+            
+                    <ul class="fList mx-4">
+            
+                        <li class="fListItem">Employee provident Fund (EPF)</li>
+                        <li class="fListItem">Employee State Insurance Corporation (ESIC)</li>
+                        <li class="fListItem">Professional tax (PT)</li>
+                        <li class="fListItem">Labour Welfare Fund (LWF)</li>
+                        <li class="fListItem">Shop & establishment Act</li>
+                        <li class="fListItem">Factory Act</li>
+                        <li class="fListItem">Contract Labour act</li>
+                        <li class="fListItem">Minimum Wages Act</li>
+                        <li class="fListItem">Payment bonus Act</li>
+                        <li class="fListItem">Payment Gratuity Act,Maternity Act</li>
+                        <li class="fListItem">workmen compensation Act</li>
+                        <li class="fListItem">Payment of Wages Act,Apprentice Act</li>
+                        <li class="fListItem">Equal Remuneration Act</li>
+                        <li class="fListItem">Child Labour Act</li>
+                        <li class="fListItem">BOCW Act (Building and other construction work)</li>
+                        <li class="fListItem">House Rent Allowance (HRA)</li>
+                        <li class="fListItem">The trade Union Act</li>
+                        <li class="fListItem">Wages of ОТ (Over line)/Holidays</li>
+                        <li class="fListItem">Goods & Services Tax (GST)</li>
+                    </ul>
+                </div>
+            
+            </div>
+            
+            
+            <div class="row footer0 px-4 py-5">
+                <h1 class="footer0Text mx-3">Want to be notified?</h1>
+                <p class="footer0small mx-3">
+                    You will be notified when Mapral is prioviding jobs for people like you...
+                </p>
+            
+                <form action="" method="POST" class="emailForm mx-4">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-4">
+            
+                            <input type="email" name="email" class="emailInput form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="col-2 mx-3">
+                            <button type="submit" class="emailBtn btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            
 
-        <img src="./img/Services (2).png" alt="" class="mainImg">
-        <img src="./img/Services (4).png" alt="" class="mainImgp">
+            <div class="footer d-flex align-items-center justify-content-between px-3 py-3">
+                <p class="footerText mb-0">2022 Mapral | All Rights Reserved</p>
+                <div class="d-flex">
+                    <p class="footerText mx-2 mb-0">Privacy Policy</p>
+                    <p class="footerText mb-0">Terms & Conditions</p>
+                </div>
+            </div>
+    
+        </div>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-
     <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
+        let menu = document.getElementById('menuIcons');
+        let phoneMenu = document.getElementById('phoneHiddenMenuBar');
 
+        menu.addEventListener('click', () => {
+            phoneMenu.classList.toggle('show');
+        });
     </script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </body>
 </html>
